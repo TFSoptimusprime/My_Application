@@ -1,0 +1,168 @@
+@charset "utf-8";
+div#header {
+	position: relative;
+	padding-top: 90px;
+	width: 100%; height: 176px;
+	background: #FFF;
+	box-sizing:  border-box;
+}
+
+div#header h1 {
+	padding-left: 78px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 80px;
+	text-align: left;
+	color: #ff6a4c;
+}
+
+dt.accordion > div {
+	padding: 15px 0 15px 20px;
+	height: 90px;
+}
+
+dt.accordion > div p.date {
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ccc;
+}
+
+dt.accordion > div p.cup {
+	margin-bottom: 15px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #222;
+}
+
+dt.accordion > div p.result {
+	margin-bottom: 15px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #222;
+}
+
+div#contents .win { color: #ff6a4c; }
+
+div#contents dl.resuts_list {
+	position: relative;
+	width: 100%;
+}
+
+div#contents dl.resuts_list dt {
+	padding: 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #999;
+	background: #eee;
+}
+
+div#contents dl.resuts_list dt p.date {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 24px;
+	color: #999;
+}
+
+div#contents dl.resuts_list dt p.match_name {
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 24px;
+	color: #222;
+}
+
+div#contents dl.resuts_list dd {
+	padding: 18px 0;
+	border-bottom:  1px solid #999;
+}
+
+div#contents dl.resuts_list dd table.player_name {
+	position: relative;
+	width: 100%;
+}
+
+div#contents dl.resuts_list dd table.player_name td {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 15px;
+	line-height: 24px;
+	color: #222;
+}
+
+div#contents dl.resuts_list dd table.player_name td .country {
+	margin-top: 3px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+div#contents dl.resuts_list dd table.player_name td:nth-child(1) { vertical-align: middle; text-align: left; }
+div#contents dl.resuts_list dd table.player_name td:nth-child(2) { vertical-align: middle; text-align: center; }
+div#contents dl.resuts_list dd table.player_name td:nth-child(3) { vertical-align: middle; text-align: right; }
+
+div#contents dl.resuts_list dd table.points {
+	position: relative;
+	margin: -55px auto 0;
+	width: 160px;
+	font-size: 15px;
+	line-height: 30px;
+	color: #222;
+}
+
+div#contents dl.resuts_list dd table.points td:nth-child(1) { vertical-align: middle; text-align: left; }
+div#contents dl.resuts_list dd table.points td:nth-child(2) { vertical-align: middle; text-align: center; }
+div#contents dl.resuts_list dd table.points td:nth-child(3) { vertical-align: middle; text-align: right; }
+
+div#contents dl.resuts_list dd table.points td.game_point {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 40px;
+}
+
+div#contents dl.resuts_list dd table.points td.point {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+@media (max-width: 640px) {
+	div#header {
+		position: relative;
+		padding-top: 70px;
+		width: auto; height: 150px;
+		background: #FFF;
+		box-sizing:  border-box;
+	}
+
+	div#header h1 {
+		padding-left: 20px;
+		font-size: 50px;
+		color: #ff6a4c;
+		text-align: left;
+	}
+	
+	dt.accordion > div {
+		padding: 15px 0 30px 10px;
+		height: 60px
+	}
+	dt.accordion > div p.date { font-size: 12px; }
+	dt.accordion > div p.cup { font-size: 12px; }
+	dt.accordion > div p.result { font-size: 10px; }
+	
+	div#contents dl.resuts_list dd table.player_name td:nth-child(1) { font-size: 12px; line-height: 18px; }
+	div#contents dl.resuts_list dd table.player_name td:nth-child(3) { font-size: 12px; line-height: 18px; }
+	
+	div#contents dl.resuts_list dd table.points { margin-top: 0; width: 65%;}
+	div#contents dl.resuts_list dd table.points td.game_point { font-size: 48px; }
+	div#contents dl.resuts_list dd table.points td.point { font-size: 24px; line-height: 45px; }
+}

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* 公開時専用 */
+#contents {
+	background: #fff;
+	color: #222;
+}
+
+@media (max-width: 640px) {
+	#contents {
+		margin-top: 84px;
+	}
+}
+
+.text_padding {
+	padding: 44px 40px 20px;
+	text-align: justify;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+}
+
+.date {
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 14px;
+	text-align:  right;
+}
+
+h2 {
+	margin-bottom: 22px;
+	font-size: 22px;
+	line-height: 33px;
+	text-align: center;
+	
+}
+
+#contents p.text {
+	margin: 1em auto;
+	width: 100%
+	font-size: 14px;
+	line-height: 21px;
+}
+
+#frame {
+	margin: 30px auto 0;
+	padding: 20px;
+	border: 2px solid #999;
+	width: 95%;
+	box-sizing: border-box;
+}
+
+#frame .each_contents {
+	position: relative;
+	margin-bottom: 30px;
+	width: 100%;
+	border-bottom: 1px solid #999;
+}
+
+#frame .each_contents .docs {
+	float: left;
+	position: relative;
+	width: 75%;
+	box-sizing: border-box;
+}
+
+
+#frame .each_contents .docs .company {
+	margin: 0 0 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#frame .each_contents .docs .keiyaku { font-size: 13px; }
+
+#frame .each_contents .docs h4 {
+	margin: 10px 0 0;
+	font-size: 13px;
+	line-height: 28px;
+}
+#frame .each_contents .docs p {
+	font-size: 13px;
+	line-height: 28px;
+}
+
+
+#frame .each_contents .logos {
+	float: left;
+	position: relative;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+#frame .each_contents .logos img {
+	display: block;
+	margin-bottom: 20px;
+	max-height: 100%;
+}
+
+@media (max-width: 640px) {
+	#frame .each_contents .docs { float: none; width: 100%; }
+	#frame .each_contents .logos { display: none; }
+}
+
+
+
+#frame .notes {
+	font-size: 12px;
+}
